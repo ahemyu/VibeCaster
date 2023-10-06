@@ -1,0 +1,36 @@
+Summary of Naive Bayes
+What It Is:
+
+Naive Bayes is a probabilistic classification algorithm based on Bayes' Theorem. It's "naive" because it makes a strong assumption that all features are independent of each other, which is rarely true in real-life applications. Despite this naive assumption, it often performs surprisingly well in practice.
+How It Works:
+
+    Bayes' Theorem: The core of the algorithm is based on Bayes' Theorem, which helps us find the probability of a label given some features, P(Label∣Features), based on the probabilities of the features given the label, P(Features∣Label).
+    P(A∣B)=P(B∣A)×P(A)P(B) / P(B)
+
+    In the context of your project, P(Label∣Features) would be the probability of a review being positive, neutral, or negative given its text.
+
+    Feature Independence: Naive Bayes assumes that all features are independent of each other. While this is a naive assumption, especially for text data where words are often dependent, the algorithm still performs well for tasks like spam filtering, sentiment analysis, and document classification.
+
+    Training: During training, the algorithm calculates the probabilities P(Features∣Label)P(Features∣Label) for each feature against each label in the dataset. These probabilities are then stored for prediction.
+
+    Prediction: For a new instance, it calculates the posterior probabilities for each label using Bayes' theorem and chooses the label with the highest probability.
+
+    Smoothing: The algorithm also incorporates techniques like Laplace or Additive smoothing to handle zero probabilities, which is controlled by a hyperparameter αα.
+
+Why It's Useful:
+
+    Simplicity: It's easy to understand and implement.
+
+    Speed: Training and prediction are very fast because of the algorithm's simplicity.
+
+    Baseline Model: Despite its naive assumptions, it often performs well enough to be used as a baseline model.
+
+    High-Dimensional Data: Works well with high-dimensional data, making it suitable for text classification problems where the feature space is large (like in your case with TF-IDF vectors).
+
+Limitations:
+
+    Feature Independence: The assumption of feature independence is often not true.
+
+    Data Distribution: Assumes that the data distribution for each attribute is Gaussian or multinomial, which may not always be the case.
+
+    Zero Probabilities: Can assign zero probabilities to unseen features, although this is often mitigated with smoothing.
