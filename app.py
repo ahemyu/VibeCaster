@@ -45,7 +45,7 @@ def get_wordnet_pos(tag):
                 "R": wordnet.ADV}
     return tag_dict.get(tag, wordnet.NOUN)
 
-# Your preprocessing function
+# preprocess the inputted review to feed into the model
 def preprocess_review(review):
     # Text Cleaning
     review = re.sub('[^\w\s]', '', review)
