@@ -71,3 +71,47 @@ Summary of Logistic Regression in VibeCaster
             Imbalance Sensitivity: Although you've used SMOTE to resample your data, logistic regression can be sensitive to class imbalance, which might affect its performance.
 
             High Cardinality: The model could become complex and slow if the TF-IDF feature space is extremely large, although this is mitigated by your hardware capabilities and data size.
+
+
+Rough Outline of Web Interface: 
+    Frontend:
+
+        Landing Page:
+            Title: "VibeCaster: Product Review Sentiment Analyzer"
+            Brief description of what the tool does.
+
+        Input Area:
+            A text box where users can paste or type a product review.
+            A "Submit" button to send the review for analysis.
+
+        Output Area:
+            A section that displays the sentiment analysis result as "Positive", "Neutral", or "Negative".
+
+        Optional:
+            A "How it works" section explaining the technology behind it.
+            A "Try again" button to clear the input and output areas for another review.
+
+    Backend:
+
+        Initialize the Model:
+            Load your trained Logistic Regression model into memory when the Flask app starts.
+
+        API Endpoint:
+            Create an API endpoint that takes a review as input and returns the sentiment as output.
+
+        Data Preprocessing:
+            The same text preprocessing (tokenization, lemmatization, stopword removal, and TF-IDF transformation) needs to be applied to the new input review.
+
+        Prediction:
+            Use the preprocessed review to make a prediction using the loaded model.
+
+        Return the Result:
+            The predicted sentiment is then sent back to the frontend and displayed in the output area.
+
+    Data Flow:
+
+        The user types/pastes a review in the text box and clicks "Submit".
+        The review is sent to the Flask backend via an API call.
+        The backend preprocesses the review and uses the model to predict the sentiment.
+        The prediction is sent back to the frontend.
+        The frontend displays the predicted sentiment in the output area
