@@ -84,3 +84,4 @@ wasabi==1.1.2
 wcwidth==0.2.8
 weasel==0.3.2
 Werkzeug==3.0.0
+transformers
