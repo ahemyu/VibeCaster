@@ -31,7 +31,7 @@ VibeCaster is a Sentiment Analysis tool designed to interpret and classify emoti
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository_url>
+    git clone [<repository_url>](https://github.com/ahemyu/VibeCaster.git)
     ```
 
 2. **Navigate to the Project Directory**:
