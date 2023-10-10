@@ -55,6 +55,7 @@ VibeCaster is a Sentiment Analysis tool designed to interpret and classify emoti
     ```
 
 2. Navigate to `http://localhost:8000` in your web browser.
+3. Just type in your review and get its sentiment analyzed.
 
 ## Contributing
 
