@@ -2,16 +2,6 @@
 
 <!-- ![VibeCaster Logo](/assets/logo.png)-->  <!-- Uncomment this line and add a logo image here -->
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [File Structure](#file-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-
 ## Introduction
 
 VibeCaster is a Sentiment Analysis tool designed to interpret and classify emotions conveyed in product reviews. Built using machine learning and natural language processing techniques, this project serves me to learn more about training models in the context of Natural Language Processing.
