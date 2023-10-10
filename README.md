@@ -55,6 +55,7 @@ VibeCaster is a Sentiment Analysis tool designed to interpret and classify emoti
 ### Data Preprocessing and Model Training
 (Optional)
 1. Open the `Model_Training.ipynb` notebook and run all the cells to preprocess the data and train the model.
+   - update the file path in the second cell to match the path on your machine.
 
 ### Web Interface
 
